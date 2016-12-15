@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_intro"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="60dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/wifi_logo"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/intro_text_image"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/intro_title"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/button_start"
+            android:background="@drawable/button_background"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="@string/intro_start_now"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

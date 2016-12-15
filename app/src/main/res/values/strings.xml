@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WifiHack</string>
+    <string name="intro_start_now">START NOW</string>
+    <string name="download_app">Please download one of sponsor’s app and you will get the password  to WiFi network.</string>
+    <string name="dialog_title">Get WiFI Password</string>
+    <string name="dialog_success">Success</string>
+    <string name="dialog_offer_complete">Thank you for completing the offer. You will be connected in 5 minutes</string>
+
+    <string name="sdk_key">e86QvSxgT2uU9g7E5lM3PgEC1SgwjxdNFEwfkJYGwT11RUGjJnaP60waeIm9</string>
+    <string name="placement">Offerwall</string>
+    <string name="currency_id">d6363fbd-edad-45ba-9b75-f89028b4b66c</string>
+</resources>
