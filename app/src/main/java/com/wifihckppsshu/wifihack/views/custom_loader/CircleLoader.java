@@ -6,7 +6,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
-import android.graphics.PointF;
 import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.Display;
@@ -30,36 +29,27 @@ public class CircleLoader extends View {
         display.getSize(size);
         int width = size.x;
 
-        /**
-         * Create strokeWidth depending on screen dimension
-         */
-        final float strokeWidth = 168 * ((float)width/720);
+        float k = (float) width / 720;
+
 
         paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setStyle(Paint.Style.STROKE);
-        paint.setStrokeWidth(strokeWidth);
-        //Circle color
+        paint.setStyle(Paint.Style.FILL);
+        paint.setStrokeWidth(1);
         paint.setColor(Color.parseColor("#1c72b6"));
 
 
 
-        rect = new RectF(strokeWidth, strokeWidth, 2 * strokeWidth, 2 * strokeWidth);
+        rect = new RectF(60 * k, 60 * k, 440 * k, 440 * k);
 
-        //Initial Angle (optional, it can be zero)
         angle = 0;
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawArc(rect, START_ANGLE_POINT, angle, false, paint);
+        canvas.drawArc(rect, START_ANGLE_POINT, angle, true, paint);
 
-    }
-
-    @Override
-    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-        super.onSizeChanged(w, h, oldw, oldh);
     }
 
     public float getAngle() {
