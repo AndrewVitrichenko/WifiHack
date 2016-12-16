@@ -2,9 +2,11 @@ package com.wifihckppsshu.wifihack.activities;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Display;
 import android.view.View;
 import android.view.animation.Animation;
 import android.widget.Toast;
@@ -37,6 +39,7 @@ public class LoaderActivity extends AppCompatActivity implements TJPlacementList
         setContentView(R.layout.activity_loader);
         ButterKnife.bind(this);
         getSupportActionBar().hide();
+
 
         /**
          * Custom loader with animation

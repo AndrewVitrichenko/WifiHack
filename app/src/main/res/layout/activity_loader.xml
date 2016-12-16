@@ -10,22 +10,24 @@
         android:layout_height="180dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/loader_title"/>
+        android:src="@drawable/loader_title" />
 
-    <ImageView
+    <RelativeLayout
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_gravity="center"
         android:layout_below="@+id/loader_title"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/circle"/>
+        android:layout_centerInParent="true">
 
-    <com.wifihckppsshu.wifihack.views.custom_loader.CircleLoader
-        android:id="@+id/circleLoader"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="157dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginStart="29dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle" />
+
+        <com.wifihckppsshu.wifihack.views.custom_loader.CircleLoader
+            android:id="@+id/circleLoader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
